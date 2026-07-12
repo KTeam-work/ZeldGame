@@ -1,0 +1,99 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &5894035996173865268
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1200149233782423702}
+  - component: {fileID: 1936424109677542313}
+  - component: {fileID: 8761530100017627424}
+  - component: {fileID: 8228921966376694962}
+  - component: {fileID: 4806501177390071469}
+  m_Layer: 0
+  m_Name: GameSaveManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1200149233782423702
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5894035996173865268}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1.97843, y: 1.39603, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1936424109677542313
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5894035996173865268}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 543cee83a3f0d364fac3d3d3721f5974, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GameSaveManger
+  list:
+  - {fileID: 11400000, guid: a4d01aecb53594c4ba9c494635b8bcb1, type: 2}
+  - {fileID: 11400000, guid: febf645e226f7384086fb85b682a725f, type: 2}
+  - {fileID: 11400000, guid: 214829898caaa7d4fa674f0e12a3a285, type: 2}
+  - {fileID: 11400000, guid: e0409358666da5c4fab502cbfeeff04b, type: 2}
+  - {fileID: 11400000, guid: 11b9992d83947a04093b0191a9ba134c, type: 2}
+--- !u!114 &8761530100017627424
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5894035996173865268}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e11d020fe84caf499e7105f6eac362f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::NewMonoBehaviourScript
+  pInventory: {fileID: 11400000, guid: 15fb57d093ecba94b9bb2191cc1c2bd3, type: 2}
+--- !u!114 &8228921966376694962
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5894035996173865268}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ef14b5776f21b741a1dde7587724cc4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TimeUiClockSaver
+  _worldTime: {fileID: 0}
+  _playerPostion: {fileID: 11400000, guid: 11b9992d83947a04093b0191a9ba134c, type: 2}
+  _Myplayer: {fileID: 0}
+--- !u!114 &4806501177390071469
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5894035996173865268}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d03bfd443e1dcb246afcef8b2129bb93, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GameManager
+  _playerPosition: {fileID: 0}
+  _gameSaveManger: {fileID: 0}
+  _inventorySaver: {fileID: 8761530100017627424}
+  _timeUiClockSaver: {fileID: 8228921966376694962}
