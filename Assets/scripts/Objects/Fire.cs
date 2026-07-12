@@ -10,7 +10,7 @@ public class Fire : MonoBehaviour
 
     [SerializeField] private GameObject Tourch;
     
-    [SerializeField] private GameManager gameManager;
+   
     void Start()
     {
       _ani = GetComponent<Animator>();
